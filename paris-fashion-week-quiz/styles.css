@@ -1,0 +1,126 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.quiz-container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #666;
+}
+
+button {
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+    color: white;
+}
+
+.option-btn {
+    display: block;
+    background-color: #f4f4f4;
+    border: 2px solid #ddd;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#next-btn {
+    background-color: #333;
+    color: white;
+    display: none;
+}
+
+#result-container {
+    display: none;
+}
+
+#score {
+    color: #333;
+    font-size: 20px;
+}
+
+.review-container {
+    display: none;
+    margin-top: 20px;
+}
+
+.review-slide {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+h3 {
+    color: #333;
+    font-size: 18px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.team-selection-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#quiz-container, #review-container {
+    margin-top: 20px;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.option-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.option-btn:hover {
+    background-color: #ddd;
+}
+
+#current-team-name {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.review-slide {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
