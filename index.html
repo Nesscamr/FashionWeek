@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris Fashion Week Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="team-selection-container" id="team-selection">
+        <h1>Welcome to the Paris Fashion Week Quiz</h1>
+        <form id="team-form">
+            <label for="teamName">Enter team names:</label>
+            <div id="team-names">
+                <input type="text" class="team-input" required placeholder="Team Name 1">
+            </div>
+            <button type="button" id="add-team-btn">Add Another Team</button>
+            <button type="submit">Start Quiz</button>
+        </form>
+    </div>
+
+    <div class="quiz-container" id="quiz-container" style="display: none;">
+        <!-- Quiz content remains the same -->
+        <h2 id="current-team-name"></h2>
+        <div id="question-container">
+            <img id="question-image" src="" alt="Question Image" style="width:100%; height:auto;">
+            <h2 id="question">Question will appear here</h2>
+            <div class="options">
+                <button class="option-btn" id="btn0" onclick="checkAnswer(0)"></button>
+                <button class="option-btn" id="btn1" onclick="checkAnswer(1)"></button>
+                <button class="option-btn" id="btn2" onclick="checkAnswer(2)"></button>
+                <button class="option-btn" id="btn3" onclick="checkAnswer(3)"></button>
+            </div>
+        </div>
+        <button id="next-btn" onclick="nextQuestion()">Next Question</button>
+    </div>
+
+    <div class="review-container" id="review-container" style="display: none;">
+        <h2>Review the Correct Answers</h2>
+        <div id="review-content"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <button onclick="resetQuiz()">Add Another Team</button>
+</body>
+</html>
